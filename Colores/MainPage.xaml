@@ -1,0 +1,60 @@
+﻿<Page
+    x:Class="Colores.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Colores"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        
+        <Rectangle 
+            x:Name="bg"
+            Grid.ColumnSpan="3"
+            Fill="Black"
+            />
+        <TextBlock
+            x:Name="txt"
+            Grid.ColumnSpan="3"
+            Text="Negro"
+            Foreground="White"
+            FontSize="60"
+            TextAlignment="Center"
+            VerticalAlignment="Center"
+            />
+        
+        <CheckBox
+            x:Name="red"
+            Grid.Row="1"
+            Grid.Column="0"
+            Content="Rojo"
+            Margin="10" Click="setColor"
+            />
+        <CheckBox
+            x:Name="blue"
+            Grid.Row="1"
+            Grid.Column="1"
+            Content="Azul"
+            Margin="10" Click="setColor"
+            />
+        <CheckBox
+            x:Name="yellow"
+            Grid.Row="1"
+            Grid.Column="2"
+            Content="Amarillo"
+            Margin="10" Click="setColor"
+            />
+        
+        
+    </Grid>
+</Page>
